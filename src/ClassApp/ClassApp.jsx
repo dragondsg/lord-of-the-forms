@@ -11,18 +11,30 @@ const defaultUser = {
 };
 
 export class ClassApp extends Component {
+  state = {
+    userInfo: defaultUser,
+  };
+
   render() {
+    const setUserInfo = (first, last, email, city, phone) => {
+      this.setState({
+        userInfo: {
+          email: email,
+          firstName: first,
+          lastName: last,
+          phone: phone,
+          city: city,
+        }
+      });
+    }
+
     return (
       <>
         <h2>Class</h2>
         <ProfileInformation
-          userData={
-            // toggle the following lines to change
-            // null
-            defaultUser
-          }
+          userData={ this.state.userInfo }
         />
-        <ClassForm />
+        <ClassForm setUser={setUserInfo} />
       </>
     );
   }
