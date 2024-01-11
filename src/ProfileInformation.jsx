@@ -21,7 +21,7 @@ export const ProfileInformation = ({ userData }) => {
       </>
     );
   }
-  // eslint-disable-next-line no-unused-vars
+  
   const { email, firstName, lastName, phone: _phone, city } = userData;
   return (
     <>

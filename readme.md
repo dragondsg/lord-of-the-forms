@@ -112,7 +112,7 @@ Profile Information Component
 - build a `capitalize` function in `transformations.ts` to correctly display a first and last name
 
 - [ ] build a `formatPhone` function in `transformations.ts` that will turn "1234567" into "12-34-56-7"
-- [ ] use `capitalize` and `formatPHone` in the `ProfileInformation` component in order to format things appropriately
+- [ ] use `capitalize` and `formatPhone` in the `ProfileInformation` component in order to format things appropriately
 
 Email Validations
 
